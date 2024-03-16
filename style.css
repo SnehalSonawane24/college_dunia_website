@@ -1,0 +1,312 @@
+#head {
+  display: flex;
+  align-items: center;
+}
+ #head p{
+  color: orangered;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; 
+  height: 70px;
+}
+.image img {
+  width: 250px; 
+}
+.p{
+  margin-left: 0%;
+}
+.text {
+   display: flex;
+  align-items: center;
+}
+.text > * {
+  margin-right: 10px;
+}
+#myBtn{
+  border: none;
+}
+.search-input {
+  width: 300px; 
+  background-color: #ebebeb;
+  height: 20px;
+  border: none;
+}
+#myBtn1{
+  border-style: none;
+}
+.fa-bars,
+.fa-record-vinyl {
+  margin-left: 10px;
+}
+.modal{
+  display: none;
+}
+.write-review a {
+  color: #000;
+}
+.review-button-container a{
+  color: #000;
+}
+.get-discount-button a button{
+  background-color: orangered;
+  color: white;
+  border: none;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+.modal-header {
+    padding: 2px 16px;
+    background-color: gray;
+    color: white;
+  }
+  
+.modal-body {padding: 2px 16px;}
+  
+.modal-footer {
+    padding: 2px 16px;
+    background-color: gray;
+    color: black;
+  }
+.nav-bar ul{
+    padding: 8px;
+    background-color: #dddddd;
+}
+.nav-bar li {
+    display: inline;
+    padding: 10px;
+    color: #000;
+
+   
+  }
+.nav-bar a{
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+.modal3 {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  .modal-content3 {
+    background-color: #fefefe;
+    margin-left: 0%;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    height: auto;
+  }
+  
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+#all-course li{
+    display: block;
+}
+
+#all-course li a i{
+    justify-content:right;
+}
+
+
+
+#imgs img{
+    width: 30%;
+    height: 200px;
+}
+table{
+    width: 100%;
+    
+}
+table th{
+    background-color:rgb(39, 211, 211) ;
+}
+table td a{
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+}
+
+table, th, td {
+    justify-content: center;
+    border:1px solid black;
+    background-color: #dddddd;
+    
+  }
+
+.container2{
+  background-color: #aaa;
+}
+
+/*footer*/
+footer{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: rgb(12, 0, 12);
+  color: gray;
+
+}
+h6{
+  margin: 30px;
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+
+}
+#footer-li ul li{
+  display: inline;
+  margin: 120px;
+  justify-content: center;
+  
+  
+}
+
+#footer-form ul li{
+  display: inline;
+  margin: 50px;
+  text-align: center;
+}
+
+
+.container1 {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  background-color: rgb(12, 0, 12);
+}
+
+.part {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+.part p{
+  
+  font-size: larger;
+}
+.part ul li{
+  display: block;
+  text-align: left;
+  font-size: small;
+}
+#footer-social img {
+  height: 50px;
+  width: 200px;
+}
+#social-icon a i{
+  display: inline;
+  color: #000;
+  margin: 8px;
+  height: 30px;
+  justify-items: center;
+  background-color: #dddddd;
+}
+.modal4 {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 30%; 
+  height: auto; 
+  overflow: auto; 
+  background-color: #e9e9e9;
+}
+
+.modal-content4 {
+  padding: 20px;
+  border: 1px solid #888;
+  width: auto; 
+  height: auto;
+  float: right;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -1,0 +1,738 @@
+<!--College Dunia-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/31280ba79f.js" crossorigin="anonymous"></script>
+
+    <title>College Duniya</title>
+    
+</head>
+<body>
+    <!--header-->
+    <header id="head">
+        <div class="container">
+            <!--Logo image -->
+            <div class="image">
+                <a href="https://collegedunia.com/"><img src="https://tma-live.s3.ap-south-1.amazonaws.com/medias/5f1924ebe345b14580ab81b3/1595483828431/Collegedunialogo_logo.png"></a>
+            </div>
+            <!--Select goals-->
+            <div class="text">
+                <p><i class="fa-solid fa-graduation-cap"></i>&nbsp;Select Goals and <i class="fa-solid fa-location-dot"></i>city</p>
+                <!--Preferences-->
+                <button id="myBtn">BE/B.Tech</button>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                            <h2>Select Your Study Preference</h2>
+                            <ul>
+                                <li>Engineering</li>
+                                <li>Management</li>
+                                <li>Commerce</li>
+                                <li>Art's</li>
+                                <li>Other</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--Search box for college-->
+                <!--Modal for search box-->
+                <div class="search-box">
+                    <input type="text" class="search-input" placeholder="Search for Colleges, Exams, Courses and More..">
+                    <button type="submit" class="search-button" id="myBtn1"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <div id="myModal1" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close">&times;</span>
+                                <h3>Search for Colleges, Exams, News and more</h3>
+                                <ul>
+                                    <li><h2>TRENDING SEARCHES</h2></li>
+                                    <li>Upcomming Events</li>
+                                    <li>"IIT" in colleges</li>
+                                    <li>"CAT" in Exams</li>
+                                    <li>"CAT Cutoff" in News</li>
+                                    <li>"MBA Colleges" in Delhi/NCR</li>
+                                    <li>"MCA Colleges" in Delhi/NCR</li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!--write a review-->
+                <div class="write-review">
+                    <a href="https://collegedunia.com/write-review?utm_source=desktop&utm_medium=top_header&utm_campaign=review_acquisition">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </a>
+                </div>
+                <div class="review-button-container">
+                    <a href="https://collegedunia.com/write-review?utm_source=desktop&utm_medium=top_header&utm_campaign=review_acquisition" class="review-button">Write a Review</a>
+                </div>
+                <!--Get discount-->
+                <div class="get-discount-button">
+                    <a href="https://collegedunia.com/write-review?utm_source=desktop&utm_medium=top_header&utm_campaign=review_acquisition"><button>Get Upto <i class="fa-solid fa-indian-rupee-sign"></i> &nbsp;500*</button></a>
+                </div>
+               
+                <!--explore modal-->
+                
+                <div class="explore">
+                    <button id="myBtn4"> <i class="fa-solid fa-grip"></i> </button>
+                    <div id="myModal4" class="modal4">
+                        <div class="modal-content4">
+                            <span class="close">&times;</span>
+                            
+                            <div class="container4">
+                                
+                                <div class="part">
+                                        <ul>
+                                            <li><h2>Explore More</h2></li>
+                                            <li>Study Abroad</li>
+                                            <li>Get upto 50% discount on Visa Fees</li>
+                                            <li>Top Universities & Colleges</li>
+                                            <li>Abroad Exams</li>
+                                            <li>Top Courses</li>
+                                            <li>Exams</li>
+                                            <li>Read College Reviews</li>
+                                            <li>News</li>
+                                            <li>Admission Alerts 2023</li>
+                                            <li>Ask a Question</li>
+                                            <li>College Predictor</li>
+                                            <li>Practice Questions</li>
+                                            <li>Institute (Counselling, Coaching and More)</li>
+                                            <li>Course Finder</li>
+                                        </ul>
+                                </div>
+                                <div class="part">
+                                    <div>
+                                        <a href="https://collegedunia.com/btech-colleges">
+                                            <img src="https://images.collegedunia.com/public/asset/svg/mobile-header-svg/write-review-img.svg?h=103&w=328&mode=stretch">
+                                        </a>
+                        
+                                    </div>
+                                </div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+            
+                <!--bar button-->
+                <div class="bar">
+                    <button><i class="fa-solid fa-bars"></i>&nbsp;<i class="fa-solid fa-record-vinyl"></i></button>
+                </div>
+
+            </div>
+        </div> 
+    </header>
+
+    <!--navigation bar-->
+    <nav class="nav-bar">
+
+        <ul>
+            <li>
+                <button id="myBtn3">All Courses</button>
+
+                    <!-- The Modal for all courses-->
+                    <div id="myModal3" class="modal3">
+
+                    <!-- Modal content -->
+                        <div class="modal-content3">
+                            <span class="close">&times;</span>
+                            <h1>All Courses</h1>
+                            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search All Courses" style="height: 30px; width: 377px;">
+                            <ul id="all-course"><br>
+                                <li>B.Tech <a href="https://collegedunia.com/btech-colleges"><i class="fa-solid fa-chevron-right"></i></a></li><hr>
+                                <li>MBA <a href="https://collegedunia.com/mba-colleges"><i class="fa-solid fa-chevron-right"></i></a></li><hr>
+                                <li>M.Tech <a href="https://collegedunia.com/mtech-colleges"><i class="fa-solid fa-chevron-right"></i></a></li><hr>
+                                <li>MBBS <a href="https://collegedunia.com/mbbs-colleges"><i class="fa-solid fa-chevron-right"></i></a></li><hr>
+                                <li>B.Com <a href="https://collegedunia.com/bcom-colleges"><i class="fa-solid fa-chevron-right"></i></a></li><hr>
+                                <li>B.Sc <a href="https://collegedunia.com/bsc-colleges"><i class="fa-solid fa-chevron-right"></i></a></li><hr>
+                                <li>B.Sc (Nursing) <a href="https://collegedunia.com/bsc-nursing-colleges"><i class="fa-solid fa-chevron-right"></i></a></li><hr>
+                                <li>BA <a href="https://collegedunia.com/ba-colleges"><i class="fa-solid fa-chevron-right"></i></a></li><hr>
+                                <li>BBA <a href="https://collegedunia.com/courses/bba"><i class="fa-solid fa-chevron-right"></i></a></li><hr>
+                                <li>M.Pharm <a href="https://collegedunia.com/courses/master-of-pharmacy-mpharm-pharmaceutics"><i class="fa-solid fa-chevron-right"></i></a></li><hr>
+                                <li>M.Sc <a href="https://collegedunia.com/courses/master-of-science-msc-mathematics"><i class="fa-solid fa-chevron-right"></i></a></li><hr>
+                                <li>M.Sc <a href="https://collegedunia.com/courses/master-of-science-msc-mathematics"><i class="fa-solid fa-chevron-right"></i></a></li><hr>
+                                <li>B.Planning <a href="https://collegedunia.com/courses/bachelor-of-planning"><i class="fa-solid fa-chevron-right"></i></a></li><hr>
+                                <li>Agriculture <a href="https://collegedunia.com/arts-colleges"><i class="fa-solid fa-chevron-right"></i></a></li><hr>
+                                <li>Arts <a href="https://collegedunia.com/arts-colleges"><i class="fa-solid fa-chevron-right"></i></a></li><hr>
+                                <li>Commerce <a href="https://collegedunia.com/commerce-colleges"><i class="fa-solid fa-chevron-right"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+            </li>
+
+            <li><a href="https://collegedunia.com/btech-colleges">B.Tech</a></li>
+            <li><a href="https://collegedunia.com/mba-colleges">MBA</a></li>
+            <li><a href="https://collegedunia.com/mtech-colleges">M.Tech</a></li>
+            <li><a href="https://collegedunia.com/mbbs-colleges">MBBS</a></li>
+            <li><a href="https://collegedunia.com/bcom-colleges">B.Com</a></li>
+            <li><a href="https://collegedunia.com/bsc-colleges">B.sc</a></li>
+            <li><a href="https://collegedunia.com/bsc-nursing-colleges">B.sc(Nursing)</a></li>
+            <li><a href="https://collegedunia.com/ba-colleges">BA</a></li>
+            <li><a href="https://collegedunia.com/bca-colleges">BCA</a></li>
+        </ul>
+    </nav>
+
+    <!--main section-->
+    <main>
+        <div>
+            <i class="fa-solid fa-house"></i>
+            <h3 style="display: inline;">BE/B.Tech Colleges</h3>
+        </div>
+
+        <div id="main-header">
+            <h1>Top BTech Colleges in India Based on 2024 Ranking</h1>
+        </div>
+        <div id="imgs">
+            <a href="https://applications.woxsen.edu.in/?utm_source=collegedunia&utm_medium=banner&utm_campaign=online"><img src="https://cdn.npfs.co/uploads/template/570/2070/publish/images/Building-1.jpg"></a>
+            <a href="https://paruluniversity.ac.in/master_2024/?utm_source=collegedunia&utm_medium=banner&utm_campaign=online"><img src="https://paruluniversity.ac.in/master_2024/images/banner/bannerm.webp"></a>
+            <a href="https://admission.osgu.ac.in/?utm_source=collegedunia&utm_medium=banner&utm_campaign=online"><img src="https://cdn.npfs.co/uploads/template/491/1607/publish/images/SONU%201.jpg"></a>
+        </div>
+
+        <!--blog-->
+        <div class="container2">
+            
+            <p><i class="fa-regular fa-user"></i> &nbsp; Sushil Pandey <i class="fa-solid fa-circle-check"></i></p>
+            <p >Senior Content Specialist | Updated on - Mar 8, 2024</p><hr>
+            <p>India has a total of 4,658 engineering colleges offering Bachelor of Technology (BTech) courses in various disciplines. Out of these colleges, there are 4,151 top BTech colleges in India including the government and public colleges. The number of students applying for the course has increased significantly in recent years as the scope of BTech is extremely wide, which has led to the division of the course into many specializations.
+            </p>
+        </div>
+        
+        <!--Nav bar-->
+        <div class="nav-bar">
+            <ul >
+                <li>All Filter &nbsp;<i class="fa-solid fa-filter"></i></li>
+                <li>Sub Stream</li>
+                <li>State</li>
+                <li>Stream</li>
+                <li>City</li>
+                <li>Course</li>
+                <li>Program Type</li>
+                <li>Type of College</li>
+                <li>Entrance/Exam Accepted</li>
+                <li>Avg Fee Per Year</li>
+                <li>Course Type</li>
+
+            </ul>
+        </div>
+        
+        <!--Tabel of colleges-->
+        <div>
+            <table >
+                <tr>
+                    <th>CD Rank</th>
+                    <th>Colleges</th>
+                    <th>Course Fees</th>
+                    <th>Placement</th>
+                    <th>User Review</th>
+                    <th>Ranking</th>
+                </tr>
+                <tr>
+                    <td>#1</td>
+                    <td><a href="https://collegedunia.com/college/14716-rajasthan-college-of-engineering-for-women-rcew-jaipur">
+                        <p>IIT Madras - Indian Institute of Technology - <br> [IITM], Chennai</p>
+                    </a></td>
+                    <td> <a href="https://collegedunia.com/university/25881-iit-madras-indian-institute-of-technology-iitm-chennai/bachelor-of-technology-btech-computer-science-and-engineering-2049">₹ 2,09,550  <br>
+                        BE/B.Tech <br>
+                        - 1st Year Fees </a>
+                    </td>
+                    <td>
+                        <a href="https://collegedunia.com/university/25881-iit-madras-indian-institute-of-technology-iitm-chennai/placement"> 
+                        ₹ 21,48,000 <br>
+                        Average Package <br>
+                        ₹ 1,98,00,000 <br>
+                        Highest Package 
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://collegedunia.com/university/25881-iit-madras-indian-institute-of-technology-iitm-chennai/reviews">
+                        8.5 / 10 <br>
+                        Based on 302 User <br>
+                        Reviews
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://collegedunia.com/university/25881-iit-madras-indian-institute-of-technology-iitm-chennai/ranking">
+                            #3th/131 in India <br>
+                            The Week2023
+                        </a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>#2</td>
+                    <td><a href="https://collegedunia.com/university/25703-iit-bombay-indian-institute-of-technology-iitb-mumbai">
+                        <p>
+                            IIT Bombay - Indian Institute of Technology - <br> [IITB], Mumbai <br>
+                            Mumbai, Maharashtra |AICTE, UGC Approved</p>
+                    </a></td>
+                    <td> <a href="https://collegedunia.com/university/25703-iit-bombay-indian-institute-of-technology-iitb-mumbai/courses-fees">₹ 2,54,650  <br>
+                        MBA/PGDM <br>
+                        -Total Fees </a>
+                    </td>
+                    <td>
+                        <a href="https://collegedunia.com/university/25703-iit-bombay-indian-institute-of-technology-iitb-mumbai/placement"> 
+                        ₹ 33,80,000 <br>
+                        Average Package <br>
+                        ₹ 1,15,00,000 <br>
+                        Highest Package 
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://collegedunia.com/university/25703-iit-bombay-indian-institute-of-technology-iitb-mumbai/reviews">
+                        9.2 / 10 <br>
+                        Based on 496 User <br>
+                        Reviews
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://collegedunia.com/university/25455-iit-delhi-indian-institute-of-technology-iitd-new-delhi/reviews">
+                            #1th/50 in India <br>
+                            The International Express 2019
+                        </a>
+                    </td>
+                </tr>
+                
+
+                <tr>
+                    <td>#3</td>
+                    <td><a href="https://collegedunia.com/university/25455-iit-delhi-indian-institute-of-technology-iitd-new-delhi">
+                        <p>
+                            IIT Delhi - Indian Institute of Technology [IITD], <br> New Delhi, Delhi NCR</p>
+                    </a></td>
+                    <td> <a href="https://collegedunia.com/university/25455-iit-delhi-indian-institute-of-technology-iitd-new-delhi/bachelor-of-technology-btech-full-time">₹ 2,54,650  <br>
+                        BE/B.Tech <br>
+                        - 1st Year Fees </a>
+                    </td>
+                    <td>
+                        <a href="https://collegedunia.com/university/25455-iit-delhi-indian-institute-of-technology-iitd-new-delhi/placement"> 
+                        ₹ 25,82,000 <br>
+                        Average Package <br>
+                        ₹ 20,00,000 <br>
+                        Highest Package 
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://collegedunia.com/university/25455-iit-delhi-indian-institute-of-technology-iitd-new-delhi/reviews">
+                        8.7 / 10 <br>
+                        Based on 496 User <br>
+                        Reviews
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://collegedunia.com/university/25455-iit-delhi-indian-institute-of-technology-iitd-new-delhi/reviews">
+                            #1th/35 in India <br>
+                            India Today 2023
+                        </a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>#4</td>
+                    <td>
+                        IIMC - Indian Institute of Management, Kolkata <br>
+                        Kolkata, West Bengal |UGC Approved</td>
+                    <td>₹ 25,00,000 <br>
+                        PG Diploma in Management <br>
+                        - Total Fees</td>
+                    <td>₹ 35,07,000 <br>
+                        Average Package <br>
+                        ₹ 1,20,00,000 <br>
+                        Highest Package</td>
+                    <td>
+                        8.8 / 10 <br>
+                        Based on 85 User <br>
+                        Reviews 
+                    </td>
+                    <td>
+                        #99th/200 in India <br>
+                        NIRF2023
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>#5</td>
+                    <td>IIT Delhi - Indian Institute of Technology [IITD], New Delhi</td> <br>
+                    <td>₹ 55,300 <br>
+                        ME/M.Tech <br>
+                        - 1st Year Fees</td>
+                    <td>₹ 25,82,000 <br>
+                        Average Package <br>
+                        ₹ 2,00,00,000 <br>
+                        Highest Package</td>
+                    <td>8.7 / 10 <br>
+                        Based on 496 User <br>
+                        Reviews <br>
+                        </td>
+                    <td>#1th/281 in India <br>
+                        Indiatoday2023</td>
+                               
+                </tr>
+
+                <tr>
+                    <td>#6</td>
+                    <td>XLRI, Jamshedpur <br>
+                        Jamshedpur, Jharkhand |AICTE, NBA, AACSB, AMBA Approved</td>
+                    <td>₹ 24,20,000 <br>
+                        MBA/PGDM <br>
+                        - Total Fees</td>
+                    <td>₹ 32,70,000 <br>
+                        Average Package <br>
+                        ₹ 1,10,00,000 <br>
+                        Highest Package</td>
+                    <td>8.9 / 10 <br>
+                        Based on 72 User <br>
+                        Reviews</td> 
+                    <td>#1th/80 in India <br>
+                        TOI2021</td>               
+                </tr>
+
+                <tr>
+                    <td>#7</td>
+                    <td>IIT Bombay - Indian Institute of Technology - [IITB], Mumbai</td> <br>
+                    <td>₹ 2,29,300 <br>
+                        BE/B.Tech <br>
+                        - 1st Year Fees</td>
+                    <td>₹ 21,82,000 <br>
+                        Average Package <br>
+                        ₹ 3,67,00,000 <br>
+                        Highest Package</td>
+                    <td>8.8 / 10 <br>
+                        Based on 308 User  <br>
+                        Reviews</td> 
+                    <td>#2th/281 in India <br>
+                        Indiatoday2023</td>               
+                </tr>
+
+                <tr>
+                    <td>#8</td>
+                    <td>FMS Delhi Faculty of Management Studies, New Delhi <br>
+                        New Delhi, Delhi NCR |AICTE Approved</td>
+                    <td>₹ 1,00,000 <br>
+                        MBA/PGDM <br>
+                        - 1st Year Fees</td>
+                    <td>₹ 34,10,000 <br>
+                        Average Package <br>
+                        ₹ 1,23,00,000 <br>
+                        Highest Package</td>
+                    <td>7.8 / 10 <br>
+                        Based on 122 User <br>
+                        Reviews</td> 
+                    <td>#35th/50 in India <br>
+                        Financial Express2019</td>               
+                </tr>
+
+                <tr>
+                    <td>#9</td>
+                    <td>New Horizon College of Engineering - [NHCE], Bangalore <br>
+                        Bangalore, Karnataka |AICTE, UGC, NBA Approved</td>
+                    <td>₹ 10,00,000 <br>
+                        BE/B.Tech <br>
+                        - total fees</td>
+                    <td>₹ 30,00,000 <br>
+                        Highest Package <br>
+                        </td>
+                    <td>8.5 / 10 <br>
+                        Based on 166 User <br>
+                        Reviews</td> 
+                    <td>#151th/200 in India <br>
+                        NIRF2023</td>               
+                </tr>
+
+                <tr>
+                    <td>#10</td>
+                    <td>Rajasthan College of Engineering for Women - [RCEW], Jaipur <br>
+                        Jaipur, Rajasthan |AICTE Approved</td>
+                    <td>₹ 87,498 <br>
+                        BE/B.Tech <br>
+                        - 1st Year Fees</td>
+                    <td>₹ 6,50,000 <br>
+                        Average Package <br>
+                        ₹ 18,00,000 <br>
+                        Highest Package</td>
+                    <td>8.7 / 10 <br>
+                        Based on 31 User <br>
+                        Reviews</td> 
+                    <td>#120th/170 in India <br>
+                        IIRF2023</td>               
+                </tr>
+                
+
+            </table>
+        </div>
+       
+
+    </main>
+
+
+    <hr>
+
+    <!--Footer-->
+    <footer>
+        
+        <br>
+       
+            <!--footer header-->
+            <h6>SUBSCRIBE TO OUR NEWS LETTER</h6>
+            <div id="footer-li">
+                <ul type="disc">
+                    <li>COLLEGE NOTIFICATION</li>
+                    <li>EXAM NOTIFICATION</li>
+                    <li>NEWS UPDATES</li>
+                </ul>
+            </div>
+            <hr>
+
+
+            <!--form-->>
+            <div id="footer-form">
+                <form>
+                <ul>
+                    <li> <input type="text" placeholder="ENTER YOUR EMAIL" value="ENTER YOUR EMAIL"> </li>
+                    <li> <input type="text" placeholder="+91 &nbsp ENTER YOUR MOBILE NO" value="+91 &nbsp ENTER YOUR MOBILE NO"></li>
+                    <li>
+                        
+                            <select id="COURSE" name="course">
+                                <option >CHOOSE A COURSE</option>
+                                <option value="BE">B.E</option>
+                                <option value="BTECH">B.Tech</option>
+                                <option value="MBA">MBA</option>
+                                <option value="BA">BA</option>
+                                <option value="BBA">BBA</option>
+                                <option value="BSC">B.CS</option>
+                                <option value="SCIENCE">SCIENCE</option>
+                                <option value="ARTS">ARTS</option>
+                                <option value="COMMERCE">COMMERCE</option>
+                                <option value="B.PHARM">B.PHARM</option>
+                                <option value="M.PHARM">M.PHARM</option>
+                                <option value="MEDICAL">MEDICAL</option>
+                                <option value="MBBS">MBBS</option>
+                                <option value="LOW">LOW</option>
+                                <option value="D.PHARM">D.PHARM</option>
+                                <option value="NURSING">NURSING</option>
+                        </select>
+                    </li>
+                    <li><button type="submit">SUBMIT DETAILS</button></li>
+                </ul>
+                </form>
+            </div>
+            <hr>
+           
+        <div class="container1">
+            <div class="part">
+                <p>TOP COLLEGES<p>
+                    <hr>
+                <div>
+                    <ul>
+                        <li>M.B.A</li>
+                        <li>B.TECH/B.E</li>
+                        <li>MCA</li>
+                        <li>BCA</li>
+                        <li>M.TECH</li>
+                        <li>MA</li>
+                        <li>BA</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="part">
+                <p>TOP UNIVERSITIES</p>
+                <hr>
+                <div>
+                    <ul>
+                        <li>ENGINEERING</li>
+                        <li>MANAGEMENT</li>
+                        <li>MEDICAL</li>
+                        <li>LAW</li>
+                        <li>COMMERCE</li>
+                        <li>SCIENCE</li>
+                        <li>ARTS</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="part">
+                <p>TOP EXAM</p>
+                <hr>
+                <div>
+                    <ul>
+                        <li>CAT</li>
+                        <li>GATE</li>
+                        <li>JEE-MAIN</li>
+                        <li>NEET</li>
+                        <li>XAT</li>
+                        <li>CLAT</li>
+                        <li>MAT</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="part">
+                <p>STUDY ABROAD</p>
+                <hr>
+                <div>
+                    <ul>
+                        <li>CANADA</li>
+                        <li>USA</li>
+                        <li>UK</li>
+                        <li>UAE</li>
+                        <li>AUSTRALIA</li>
+                        <li>GERMANY</li>
+                        <li>SWEDAN</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="part">
+                <p>STUDY ABROAD</p>
+                <hr>
+                <div>
+                    <ul>
+                        <li>IRELAND</li>
+                        <li>NEW ZEALAND</li>
+                        <li>HONG KONG</li>
+                        <li>SINGAPUR</li>
+                        <li>MALAYSIA</li>
+                        <li>NETHERLAND</li>
+                        <li>ITALY</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="part">
+                <p>OTHER LINKS</p>
+                <hr>
+                <div>
+                    <ul>
+                        <li>ABOUT COLLEGEDUNIYA</li>
+                        <li>CONTACT_US</li>
+                        <li>ADVERTISING</li>
+                        <li>CAREER</li>
+                        <li>TERMS & CONDITIONS</li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+    <hr>
+    <div id="footer-social">
+        <div class="container1">
+            <div class="part">
+                <h2>Download the Collegedunia app on</h2>
+            </div>
+            <!-- Link of apps -->
+            <div class="part">
+                <a href="https://play.google.com/store/apps/details?id=com.collegedunia&referrer=utm_source%3DDesktop%26utm_medium%3DFooter%26utm_term%3Dgoogle-play-store%26utm_content%3Dheader-click%26utm_campaign%3Ddownload&pli=1">
+                    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png">
+                </a>
+            </div>
+            <div class="part">
+                <a href="https://apps.apple.com/us/app/collegedunia/id1366265528?ls=1">
+                    <img src="https://cdn.freebiesupply.com/logos/large/2x/download-on-the-app-store-apple-logo-png-transparent.png">
+                </a>
+            </div>
+
+            <!--Social Section-->
+            <div class="part" id="social-icon">
+                <a href="https://www.facebook.com/collegedunia"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/collegedunia/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/college_dunia"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UClPHFJPqR5mNDy_-pxDCVnA/videos"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://collegedunia.com/btech-colleges"><i class="fa-brands fa-quora"></i></a>
+            </div>
+    
+        </div>
+    </div>
+    <hr>
+    <div >
+        
+        <p>© 2024 Collegedunia Web Pvt. Ltd. All Rights Reserved</p>
+    </div>
+</footer>
+
+<!--Java Script-->
+
+    <script>
+
+        //preferences
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+
+        //modal for search    
+        var modal1 = document.getElementById("myModal1");
+        var btn1 = document.getElementById("myBtn1");
+        var span = document.getElementsByClassName("close")[1];
+        btn1.onclick = function() {
+        modal1.style.display = "block";
+        }
+        span.onclick = function() {
+        modal1.style.display = "none";
+        }
+        window.onclick = function(event) {
+        if (event.target == modal1) {
+                modal1.style.display = "none";
+            }
+        }   
+
+
+        //Nav all Courses
+        var modal3 = document.getElementById("myModal3");
+        var btn3 = document.getElementById("myBtn3");
+        var span = document.getElementsByClassName("close")[2];
+        btn3.onclick = function() {
+        modal3.style.display = "block";
+        }   
+        span.onclick = function() {
+            modal3.style.display = "none";
+        }
+        window.onclick = function(event) {
+        if (event.target == modal3) {
+                modal3.style.display = "none";
+            }
+        }       
+
+
+        //modal for explore
+        var modal4 = document.getElementById("myModal4");
+        var btn4 = document.getElementById("myBtn4");
+        var span = document.getElementsByClassName("close")[3];
+        btn4.onclick = function() {
+            modal4.style.display = "block";
+        }
+        span.onclick = function() {
+              modal4.style.display = "none";
+        }
+        window.onclick = function(event) {
+        if (event.target == modal4) {
+                modal4.style.display = "none";
+            }
+        }
+
+    </script>
+        
+        
+</body>
+</html>
+
